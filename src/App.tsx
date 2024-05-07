@@ -35,7 +35,7 @@ function App() {
           {/* c */}
  
       
-             <Route path = "/engmed1" element = {<S />} />
+             <Route path = "/ata1" element = {<S />} />
         
  
       
