@@ -7,7 +7,7 @@ import "./styles.scss";
 import { scrollTo } from "../utils";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Head_bg from "../assets/hero5.png";
+import Head_bg from "../assets/car.jpg";
 import Headline from "../assets/headline_spandeb1.png";
 
 // google tag manager
@@ -195,12 +195,12 @@ export default function Fifth_SP() {
     });
   };
 
-  const [quiz, setQuiz] = useState("Are you over the age of 64?  ");
+  const [quiz, setQuiz] = useState("Do you drive less than 100 miles a day on average?");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
-  const [yes,setYes]=useState("YES, I'M 65 OR OLDER")
-  const [no,setNo]=useState("NO, I'M 64 OR YOUNGER")
+  const [yes,setYes]=useState("YES")
+  const [no,setNo]=useState("NO")
   
 
   const stepProcess = () => {
@@ -266,10 +266,10 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "Are you over the age of 64?  ") {
+    if (quiz === "Do you drive less than 100 miles a day on average?") {
       setYes("Yes")
       setNo("No")
-      setQuiz("2. Do you live in the United States?");
+      setQuiz("2. Do you have any DUIs from the past 2 years?");
     } else {
       setStep("Reviewing Your Answers...");
      
@@ -304,7 +304,7 @@ export default function Fifth_SP() {
     if (quiz === "Are you over the age of 60?  ") {
       setYes("Yes")
       setNo("No")
-      setQuiz("2. Do you live in the United States?");
+      setQuiz("2. Do you have any DUIs from the past 2 years?");
     } else {
       setStep("Reviewing Your Answers...");
     
@@ -338,7 +338,7 @@ export default function Fifth_SP() {
     <div>
      <ToastContainer />
       <div style={{marginBottom:'4px'}} className="top-sticky-blue-test2" id="top">
-      Senior's Allowance Program 2024
+      Auto Benefits Org.
       </div>
       {step === "process" ? (
         <>
@@ -346,17 +346,17 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                Americans Over 65 Can Now Qualify For The $3600 Grocery Allowance in 2024!
+                Americans Driving Less than 100 Miles A Day Can Now Slash Their Auto Insurance by upto 80%. Here's How!
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              Americans over 65 years old can claim the 2024 Grocery Allowance Card that gives them up to $3600. Americans can use the funds to fully cover their Groceries, Medicines, etc. at Walmart and thousands of other participating stores!
+              Americans car owners who drive less than 100 miles a day can now qualify for ‘highly discounted’ auto insurance plans and save unto 80% every month, with the same exact coverage.
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
-              If you have not yet claimed your monthly allowance then answer the questions below and once approved <b>you will have your $3,600 Grocery Allowance mailed to you within a few days ready for use!</b>
+              Simply answer 2 questions below to see if you’re eligible to enrol in the highly discounted auto insurance plans and make a switch to start saving your hard earned money instantly!
               </div>
               {/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
             </div>
@@ -383,7 +383,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulation, You Qualify!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call</b> To Claim Your Grocery Allowance!
+            Make A <b>Quick Call</b> Claim Discounted Auto Insurance Plan!
           </div>
           <div className="spots-count">Spots remaining: 4</div>
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
