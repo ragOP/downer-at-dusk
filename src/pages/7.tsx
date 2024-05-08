@@ -51,7 +51,7 @@ export default function Fifth_SP() {
     // Make the word "Allowance" bold in all lines
     boldedMessage = boldedMessage.replace(
       /\$3,600 Grocery Allowance/g,
-      '<strong class="green-bold">$3,600 Grocery Allowance</strong>'
+      '<strong class="green-bold">Highly Discounted Plan</strong>'
     );
   
     // Make specific dollar amounts bold only in specific lines
@@ -352,7 +352,7 @@ export default function Fifth_SP() {
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              Americans car owners who drive less than 100 miles a day can now qualify for ‘highly discounted’ auto insurance plans and save unto 80% every month, with the same exact coverage.
+              American car owners who drive less than 100 miles a day can now qualify for ‘highly discounted’ auto insurance plans and save unto 80% every month, with the same exact coverage.
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
@@ -383,7 +383,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulation, You Qualify!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call</b> Claim Discounted Auto Insurance Plan!
+            Make A <b>Quick Call</b> Claim A Discounted Auto Insurance Plan!
           </div>
           <div className="spots-count">Spots remaining: 4</div>
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
