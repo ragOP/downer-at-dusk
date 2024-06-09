@@ -359,7 +359,7 @@ export default function Fifth_SP() {
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
-              Simply answer the 2 questions below to see if you’re eligible to enroll in the highly discounted auto insurance plans now!
+              Simply <b>answer the 2 questions below</b> to see if you’re eligible to enroll in the highly discounted auto insurance plans now!
               </div>
               {/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
             </div>
