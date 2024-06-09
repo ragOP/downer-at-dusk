@@ -196,7 +196,7 @@ export default function Fifth_SP() {
     });
   };
 
-  const [quiz, setQuiz] = useState("Do you drive under 100 miles a day on average?");
+  const [quiz, setQuiz] = useState("1. Do you drive under 100 miles a day on average?");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
@@ -267,7 +267,7 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "Do you drive under 100 miles a day on average?") {
+    if (quiz === "1. Do you drive under 100 miles a day on average?") {
       setYes("Yes")
       setNo("No")
       setQuiz("2. Do you have any DUIs from the past 2 years?");
