@@ -196,7 +196,7 @@ export default function Fifth_SP() {
     });
   };
 
-  const [quiz, setQuiz] = useState("Do you drive less than 100 miles a day on average?");
+  const [quiz, setQuiz] = useState("Do you drive under 100 miles a day on average?");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
@@ -267,7 +267,7 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "Do you drive less than 100 miles a day on average?") {
+    if (quiz === "Do you drive under 100 miles a day on average?") {
       setYes("Yes")
       setNo("No")
       setQuiz("2. Do you have any DUIs from the past 2 years?");
@@ -347,17 +347,19 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                {zipCode} Driving Less than 100 Miles A Day Can Now Slash Their Auto Insurance by upto 80%. Here's How!
+                Last Chance: {zipCode} Residents, Claim Your Cheap Auto Insurance Plan Before It's Too late!
+                {/* {zipCode} residents can now qualify for ‘highly discounted’ auto insurance plans and save upto 80% every month, with the same exact coverage. */}
+                {/* {zipCode} Driving Less than 100 Miles A Day Can Now Slash Their Auto Insurance by upto 80%. Here's How! */}
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              American car owners who drive less than 100 miles a day can now qualify for ‘highly discounted’ auto insurance plans and save unto 80% every month, with the same exact coverage.
+              {zipCode} residents can now qualify for ‘highly discounted’ auto insurance plans and save upto 80% every month, with the same exact coverage.
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
-              Simply answer 2 questions below to see if you’re eligible to enrol in the highly discounted auto insurance plans and make a switch to start saving your hard earned money instantly!
+              Simply answer the 2 questions below to see if you’re eligible to enroll in the highly discounted auto insurance plans now!
               </div>
               {/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
             </div>
