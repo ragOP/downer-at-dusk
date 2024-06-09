@@ -108,20 +108,21 @@ export default function Fifth_SP() {
     };
   }, []);
   
-  // const [zipCode, setZipCode] = useState("");
-  // useEffect(() => {
-  //   const fetchUserLocation = async () => {
-  //     try {
-  //       const response = await axios.get("https://ipapi.co/json/");
-  //       console.log('response',response.data);
-  //       setZipCode(response.data.postal);
-  //     } catch (error) {
-  //       console.error("Error fetching user location:", error);
-  //     }
-  //   };
+  const [zipCode, setZipCode] = useState("");
+ 
+  useEffect(() => {
+    const fetchUserLocation = async () => {
+      try {
+        const response = await axios.get("https://ipapi.co/json/");
+       
+        setZipCode(response.data.region);
+      } catch (error) {
+        console.error("Error fetching user location:", error);
+      }
+    };
 
-  //   fetchUserLocation();
-  // }, []);
+    fetchUserLocation();
+  }, []);
   useEffect(() => {
     window.document.title = "Senior's Allowance Program 2024";
 
@@ -346,7 +347,7 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                Americans Driving Less than 100 Miles A Day Can Now Slash Their Auto Insurance by upto 80%. Here's How!
+                {zipCode} Driving Less than 100 Miles A Day Can Now Slash Their Auto Insurance by upto 80%. Here's How!
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
