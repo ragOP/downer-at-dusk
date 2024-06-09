@@ -337,7 +337,7 @@ export default function Fifth_SP() {
 
   return (
     <div>
-     <ToastContainer />
+     {/* <ToastContainer /> */}
       <div style={{marginBottom:'4px'}} className="top-sticky-blue-test2" id="top">
       Auto Benefits Org.
       </div>
@@ -386,7 +386,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulation, You Qualify!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call</b> Claim A Discounted Auto Insurance Plan!
+            Make A <b>Quick Call</b> Claim Discounted Auto Insurance Plan!
           </div>
           <div className="spots-count">Spots remaining: 4</div>
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
@@ -414,7 +414,7 @@ export default function Fifth_SP() {
         </div>
         {/* <p>{zipCode} </p> */}
       </div>
-      <ToastContainer
+      {/* <ToastContainer
         position="bottom-right"
         autoClose={5000}
         newestOnTop={false}
@@ -423,7 +423,7 @@ export default function Fifth_SP() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-      />
+      /> */}
     </div>
   );
 }
