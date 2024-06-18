@@ -24,7 +24,7 @@ import Ip from './pages/ip'
 import Newx from './pages/Newx'
 import Party from './pages/Party';
 import Food from './pages/Food';
-
+import Insurance from './pages/Insurance';
 function App() {
  console.log('s');
   return (
@@ -36,6 +36,8 @@ function App() {
  
       
              <Route path = "/ata1" element = {<S />} />
+             <Route path = "/ata2" element = {<Insurance />} />
+             
         
  
       
