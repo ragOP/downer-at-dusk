@@ -25,6 +25,7 @@ import Newx from './pages/Newx'
 import Party from './pages/Party';
 import Food from './pages/Food';
 import Insurance from './pages/Insurance';
+import Unique2 from './pages/Unique2';
 function App() {
  console.log('s');
   return (
@@ -38,7 +39,8 @@ function App() {
              <Route path = "/ata1" element = {<S />} />
              <Route path = "/ata2" element = {<Insurance />} />
              
-        
+             <Route path = "/engat2" element = {<Unique2 />} />
+
  
       
 
