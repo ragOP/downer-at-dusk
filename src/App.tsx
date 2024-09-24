@@ -26,6 +26,8 @@ import Party from './pages/Party';
 import Food from './pages/Food';
 import Insurance from './pages/Insurance';
 import Unique2 from './pages/Unique2';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 function App() {
  console.log('s');
   return (
@@ -42,7 +44,8 @@ function App() {
              <Route path = "/engat2" element = {<Unique2 />} />
 
  
-      
+             <Route path="/terms-and-conditions" element={<Terms />} />
+             <Route path="/privacy-policy" element={<Privacy />} />
 
           <Route path = "/view" element = {<Visits />} />
           <Route path = "/*" element = {<NotFound />} />
