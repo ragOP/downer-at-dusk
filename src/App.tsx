@@ -35,7 +35,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* c */}
+         
  
       
              <Route path = "/ata1" element = {<S />} />
